@@ -37,3 +37,6 @@ WORKDIR /root/test
 RUN mkdir build
 RUN haxe build.hxml
 RUN build/cpp/Test
+
+# Install OpenFL
+RUN haxelib install openfl && haxelib run openfl setup
